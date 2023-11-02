@@ -1,0 +1,703 @@
+/* 
+---------------------------------------------
+Global Styles
+--------------------------------------------- 
+*/
+.border-button a {
+  font-size: 14px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: 1px solid var(--color-purple);
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.border-button a:after {
+  width: 78%;
+  height: 2px;
+  background-color: var(--color-white);
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.border-button a:hover {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+.main-button a {
+  font-size: 14px;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+  border: 1px solid var(--color-purple);
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-button a:after {
+  width: 78%;
+  height: 2px;
+  background-color: var(--color-white);
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.main-button a:hover {
+  background-color: var(--color-white);
+  color: var(--color-purple);
+  border: 1px solid var(--color-white);
+}
+
+section {
+  margin-block: 120px;
+}
+
+/*——————————————— MAIN ———————————————*/
+main {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-heading {
+  z-index: 2;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-heading .line-dec {
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-purple);
+  margin: 0 auto 30px auto;
+}
+
+.section-heading h2 {
+  margin-top: 10px;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--color-white);
+}
+
+.section-heading h2 em {
+  color: var(--color-purple);
+  font-style: normal;
+}
+
+
+/*——————————————— CSS REUTILIZABLE ———————————————*/
+._section {
+  background-color: #3CF;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 1rem;
+
+}
+
+/* 
+---------------------------------------------
+Banner Style
+--------------------------------------------- 
+*/
+.button_banner {
+  margin-block: 2rem;
+  display: grid;
+  width: min-content;
+}
+
+.button_banner:hover{
+  border: 2px solid var(--color-purple);
+}
+
+
+.main-banner {
+  background-image: url(../img/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-block: 220px;
+  width: 100%;
+  background-color: #2a2a2a;
+}
+
+
+.header-text {
+  margin-inline: 4rem;
+}
+
+.main-banner h6 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.main-banner h2 {
+  color: var(--color-white);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 66px;
+  text-transform: uppercase;
+}
+
+.main-banner p {
+  margin-top: 20px;
+}
+
+.main-banner .buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: start;
+}
+
+.main-banner .border-button {
+  margin-right: 15px;
+}
+
+.main-banner .owl-banner {
+  margin-top: -40px;
+}
+
+.main-banner .owl-nav {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  bottom: -76px;
+  text-align: center;
+}
+
+.main-banner .owl-nav .owl-prev {
+  margin-right: 7.5px;
+}
+
+.main-banner .owl-nav .owl-next {
+  margin-left: 7.5px;
+}
+
+.main-banner .owl-nav .owl-prev span,
+.main-banner .owl-nav .owl-next span {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 24px;
+  display: inline-block;
+  color: var(--color-purple);
+  background-color: var(--color-white);
+  border-radius: 50%;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.main-banner .owl-nav .owl-prev span:hover,
+.main-banner .owl-nav .owl-next span:hover {
+  opacity: 1;
+}
+
+
+
+
+/* 
+---------------------------------------------
+ABOUT PAGE 1# SECTION
+--------------------------------------------- 
+*/
+
+.about_page {
+  background-image: url(../img/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.about_section {
+  padding-block: 4rem;
+  margin-inline: 4rem;
+  justify-content: center;
+  align-items: center;
+  text-overflow: ellipsis;
+}
+
+.about_page .section-heading .line-dec {
+  margin-left: 0%;
+  background-color: var(--color-purple);
+}
+
+.about_page .section-heading {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.about_page .main-button {
+  text-align: center;
+}
+
+.about_page .item {
+  margin: 0 auto;
+  max-width: 80ch;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about_page .item .icon {
+  background-color: var(--color-purple);
+}
+
+.about_page .item .icon:hover {
+  background-color: var(--color-white);
+}
+
+.about_page .item .icon img {
+  max-width: 31px;
+}
+
+.about_page h4 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.about_page p {
+  margin-right: 30px;
+}
+
+.about_page .item a {
+  color: #3CF;
+}
+
+
+/* 
+---------------------------------------------
+Create NFT Style
+--------------------------------------------- 
+*/
+
+.info_page {
+  background-image: url(../img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.info_page .item .icon {
+  background-color: var(--color-white);
+}
+
+.info_page .item .icon:hover {
+  background-color: var(--color-purple);
+}
+
+.info_page .item .icon img {
+  max-width: 31px;
+}
+
+.info_section {
+  padding-block: 4rem;
+  margin-inline: 4rem;
+  justify-content: center;
+  align-items: center;
+  text-overflow: ellipsis;
+}
+
+.info_page .section-heading .line-dec {
+  margin-left: 0%;
+  background-color: var(--color-white);
+}
+
+.info_page .section-heading {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.info_page .main-button {
+  text-align: center;
+}
+
+.info_page .item {
+  margin: 0 auto;
+  max-width: 80ch;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.info_page h4 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.info_page p {
+  margin-right: 30px;
+}
+
+.info_page .item a {
+  color: #3CF;
+}
+
+
+
+
+
+
+
+
+/* ICONS ITEMS */
+.item .icon {
+  transition: all 0.3s;
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  text-align: center;
+  line-height: 82px;
+  border-radius: 50%;
+}
+
+
+
+
+/* 
+---------------------------------------------
+Currently Market Style
+--------------------------------------------- 
+*/
+
+.currently-market {
+  background-image: url(../img/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.currently {
+  padding-block: 4rem;
+  margin-inline: 2rem;
+}
+
+.currently-market-item {
+  width: max-content;
+}
+
+.currently-market .section-heading {
+  text-align: left;
+}
+
+.currently-market .section-heading .line-dec {
+  margin-left: 0;
+}
+
+.author img {
+  border-radius: 50%;
+  width: max-content;
+  height: 52px;
+}
+
+.currently-market .filters ul li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 15px;
+  color: var(--color-white);
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.currently-market .filters ul li:first-child {
+  margin-left: 0px;
+}
+
+
+.currently-market .filters ul li.active,
+.currently-market .filters ul li:hover {
+  background-color: var(--color-purple);
+}
+
+.currently-market .item {
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.left_image img {
+  border-radius: 50%;
+  height: max-content;
+  min-width: 200px;
+  border-radius: 20px;
+}
+
+.currently-market .item .right-content {
+  margin-left: 40px;
+  width: 100%;
+}
+
+.currently-market .item .right-content h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.currently-market .item .right-content span.author {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.currently-market .item .right-content span.author img {
+  margin-right: 15px;
+}
+
+.currently-market .item .right-content span.author h6 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.currently-market .item .right-content span.author a {
+  color: var(--color-purple);
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.currently-market .item span {
+  color: var(--color-white);
+  display: inline-block;
+  font-size: 15px;
+}
+
+.currently-market .item .line-dec {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.currently-market .item span strong {
+  font-size: 20px;
+}
+
+.currently-market .item span.bid {
+  line-height: 35px;
+}
+
+.currently-market .item span.bid em,
+.currently-market .item span.ends em {
+  font-style: normal;
+}
+
+.currently-market .item span.ends {
+  text-align: right;
+  float: right;
+  line-height: 35px;
+}
+
+.currently-market .item .text-button {
+  margin-top: 40px;
+}
+
+.currently-market .item .text-button a {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-purple);
+  border-bottom: 1px solid var(--color-purple);
+}
+
+
+
+/* 
+---------------------------------------------
+Responsive Style
+--------------------------------------------- 
+*/
+
+body {
+  overflow-x: hidden;
+}
+
+
+
+/* PREGUNTAS FRECUENTES */
+.secciones_container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.secciones_row {
+  transition: all 1.3s;
+}
+
+.secciones_box {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all  0.3s;
+}
+
+.pregunta_text {
+  margin: 15px;
+  font-size: 1rem;
+  margin: 0.5rem auto;
+  text-align: center;
+}
+
+.secciones_box:hover {
+  transform: translateY(-10px);
+}
+
+.secciones_box h4 {
+  font-size: 18px;
+  color: var(--color-white);
+  text-transform: capitalize;
+}
+
+
+.secciones_box ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.secciones_box ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 300;
+  color: #ccc;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.secciones_box ul li a:hover {
+  color: var(--color-white);
+  padding-left: 8px;
+}
+
+.secciones_box .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--color-white);
+  transition: all 0.5s ease;
+}
+
+.secciones_box .social-links a:hover {
+  color: var(--color-purple);
+  background-color: var(--color-white);
+}
+
+.img_secciones {
+  transition: all 1s;
+  padding-inline: 10px;
+  align-items: center;
+  display: flex;
+  background-color: rgba(33, 33, 33, 0.5);
+  border-radius: 1rem;
+}
+
+.img_secciones h4{
+  font-size: 1rem;
+}
+
+.img_secciones img {
+  background-color: var(--color-purple);
+  border-radius: 50%;
+  padding: 10px;
+  margin-inline: 10px;
+  width: 50px;
+  height: max-content;
+}
+
+
+.secciones_box:hover .pregunta_text {
+  visibility: visible;
+  display: block;
+}
+
+
+
+
+
+/* TOOLTIP */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--color-white);
+
+  visibility: hidden;
+  width: 120px;
+  color: var(--color-white);
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

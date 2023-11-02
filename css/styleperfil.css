@@ -1,0 +1,408 @@
+/* *——————————————— MAIN ———————————————*/
+.perfil-usuario {
+  background: linear-gradient(transparent, #33333350, transparent);
+  border-color: 2px var(--color-border-hsla);
+  margin-top: 3rem;
+  color: #ccc;
+}
+
+
+.perfil-usuario .portada-perfil {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 20rem;
+  margin-bottom: .5rem;
+}
+
+
+.perfil-usuario .sombra {
+  position: absolute;
+  display: block;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+}
+.perfil-usuario .portada-perfil,
+.perfil-usuario .sombra {
+  border-radius: 0 0 20px 20px;
+}
+.perfil-usuario img {
+  width: 100%;
+}
+.contenedor-perfil {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.perfil-usuario .contenedor-perfil {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.avatar-perfil {
+  object-fit: cover;
+}
+
+.perfil-usuario .avatar-perfil {
+  display: block;
+  width: 230px;
+  height: 230px;
+  background-color: #3d3d3d;
+  position: absolute;
+  bottom: -65px;
+  left: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-usuario .datos-perfil {
+  position: absolute;
+  display: block;
+  width: calc(100% - 230px - 7rem);
+  right: 0;
+  bottom: 0;
+  color: var(--color-white);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+.perfil-usuario .titulo-usuario {
+  font-size: 2.3rem;
+  white-space: nowrap;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.perfil-usuario .presentacion {
+  font-size: 1em;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  max-height: 6em;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.perfil-usuario .lista-perfil {
+  list-style: none;
+}
+.perfil-usuario .lista-perfil li {
+  display: inline-block;
+  font-size: 1em;
+  margin-right: 1rem;
+}
+
+.perfil-usuario .opcciones-perfil {
+  display: block;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+.perfil-usuario .opcciones-perfil button {
+  border: 0;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color-white);
+  cursor: pointer;
+}
+.perfil-usuario .menu-perfil ul {
+  display: flex;
+  list-style: none;
+  margin-left: calc(200px + 7.5rem);
+  width: calc(100% - 200px - 8rem);
+}
+.perfil-usuario .menu-perfil ul li {
+  margin: 0.5rem;
+}
+.perfil-usuario .menu-perfil a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s;
+
+}
+.perfil-usuario .menu-perfil a:hover {
+  transform: scale(1.05);
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+.perfil-usuario .icono-perfil {
+  margin-right: 0.7rem;
+}
+
+
+/* *——————————————— MAIN ———————————————*/
+.perfil-usuario {
+  background: linear-gradient(transparent, #33333350, transparent);
+  border-color: 2px var(--color-border-hsla);
+  margin-top: 3rem;
+  color: #ccc;
+}
+
+
+.perfil-usuario .portada-perfil {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 20rem;
+  margin-bottom: .5rem;
+}
+
+
+.perfil-usuario .sombra {
+  position: absolute;
+  display: block;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+}
+.perfil-usuario .portada-perfil,
+.perfil-usuario .sombra {
+  border-radius: 0 0 20px 20px;
+}
+.perfil-usuario img {
+  width: 100%;
+}
+.contenedor-perfil {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.perfil-usuario .contenedor-perfil {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.avatar-perfil {
+  object-fit: cover;
+}
+
+.perfil-usuario .avatar-perfil {
+  display: block;
+  width: 230px;
+  height: 230px;
+  background-color: #3d3d3d;
+  position: absolute;
+  bottom: -65px;
+  left: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+}
+
+.perfil-usuario .datos-perfil {
+  position: absolute;
+  display: block;
+  width: calc(100% - 230px - 7rem);
+  right: 0;
+  bottom: 0;
+  color: var(--color-white);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+.perfil-usuario .titulo-usuario {
+  font-size: 2.3rem;
+  white-space: nowrap;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.perfil-usuario .presentacion {
+  font-size: 1em;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  max-height: 6em;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.perfil-usuario .lista-perfil {
+  list-style: none;
+}
+.perfil-usuario .lista-perfil li {
+  display: inline-block;
+  font-size: 1em;
+  margin-right: 1rem;
+}
+
+.perfil-usuario .opcciones-perfil {
+  display: block;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+.perfil-usuario .opcciones-perfil button {
+  border: 0;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color-white);
+  cursor: pointer;
+}
+.perfil-usuario .menu-perfil ul {
+  display: flex;
+  list-style: none;
+  margin-left: calc(200px + 7.5rem);
+  width: calc(100% - 200px - 8rem);
+}
+.perfil-usuario .menu-perfil ul li {
+  margin: 0.5rem;
+}
+.perfil-usuario .menu-perfil a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s;
+
+}
+.perfil-usuario .menu-perfil a:hover {
+  transform: scale(1.05);
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+.perfil-usuario .icono-perfil {
+  margin-right: 0.7rem;
+}
+
+
+
+/* Estilos para la sección de publicaciones en un tema oscuro */
+
+/* Contenedor principal */
+.publicacion_container {
+  margin: 5rem auto;
+  max-width: 600px;
+
+  padding: 20px;
+  border-radius: 10px;
+  background: #222;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.section_publicacion  {
+  display: grid;
+}
+
+/* Formulario de publicación */
+.publicacion_form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiqueta y campo de entrada para el título del servicio */
+.titulo_publicacion {
+  margin-bottom: 20px;
+  display: grid;
+}
+
+.titulo_publicacion label {
+  color: #fff;
+}
+
+.titulo_publicacion input {
+  color: #fff;
+  background: #333;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #444;
+}
+
+/* Etiqueta y campo de entrada para la descripción del servicio */
+.descripcion_publicacion {
+  margin-bottom: 30px;
+  display: grid;
+}
+
+.descripcion_publicacion label {
+  color: #fff;
+}
+
+.descripcion_publicacion textarea {
+  color: #fff;
+  background: #333;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  resize: vertical;
+}
+
+/* Etiqueta y selección de categoría */
+.categoria_publicacion {
+  margin-bottom: 20px;
+  display: grid;
+}
+
+.categoria_publicacion label {
+  color: #fff;
+}
+
+.categoria_publicacion select {
+  color: #fff;
+  background: #333;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #444;
+}
+
+/* Sección para subir imagen */
+.section_public_img {
+  margin-bottom: 20px;
+}
+
+/* Estilo para el botón de subir imagen */
+.publicacion_subir_img {
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: #fff;
+  background: #9400D3;
+  transition: all 0.3s;
+}
+
+.publicacion_subir_img:hover {
+  background-color: #fff;
+  color: #9400D3;
+}
+
+/* Estilo para el botón de publicación */
+.publicacion_button {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  background: #9400D3;
+  transition: all 0.3s;
+}
+
+.publicacion_button:hover {
+  background-color: #fff;
+  color: #9400D3;
+}
+
+/* Sección para mostrar resultados */
+.section_resultados {
+  color: #fff;
+}

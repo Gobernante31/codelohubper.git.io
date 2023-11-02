@@ -1,0 +1,354 @@
+
+/* 
+---------------------------------------------
+Global Styles
+--------------------------------------------- 
+*/
+::selection {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+::-moz-selection {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+.border-button a {
+  font-size: 14px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: 1px solid var(--color-purple);
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.border-button a:after {
+  width: 78%;
+  height: 2px;
+  background-color: var(--color-white);
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.border-button a:hover {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+.main-button a {
+  font-size: 14px;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+  border: 1px solid var(--color-purple);
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-button a:after {
+  width: 78%;
+  height: 2px;
+  background-color: var(--color-white);
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.main-button a:hover {
+  background-color: var(--color-white);
+  color: var(--color-purple);
+  border: 1px solid var(--color-white);
+}
+
+section {
+  margin-block: 120px;
+}
+
+/*——————————————— MAIN ———————————————*/
+main {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-heading {
+  z-index: 2;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-heading .line-dec {
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-purple);
+  margin: 0 auto 30px auto;
+}
+
+.section-heading h2 {
+  margin-top: 10px;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--color-white);
+}
+
+.section-heading h2 em {
+  color: var(--color-purple);
+  font-style: normal;
+}
+
+.banner_content {
+  justify-content: center;
+}
+.banner_bt {
+  margin: 2rem 2rem 2rem 4rem;
+}
+
+/*——————————————— CSS REUTILIZABLE ———————————————*/
+._section {
+  background-color: #3CF;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 1rem;
+}
+
+
+
+
+
+/* MAIN */
+.main-banner {
+  background-image: url(../img/fondo_home.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  padding-block: 5rem;
+  width: 100%;
+  background-color: #2a2a2a;
+}
+
+.header-text {
+  margin-inline: 4rem;
+}
+.main-banner h6 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.main-banner h2 {
+  color: var(--color-white);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 66px;
+  text-transform: uppercase;
+}
+
+.main-banner p {
+  margin-top: 20px;
+}
+
+.main-banner .buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: start;
+}
+
+.main-banner .border-button {
+  margin-right: 15px;
+}
+
+.main-banner .owl-banner {
+  margin-top: -40px;
+}
+
+.main-banner .owl-nav {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  bottom: -76px;
+  text-align: center;
+}
+
+.main-banner .owl-nav .owl-prev {
+  margin-right: 7.5px;
+}
+
+.main-banner .owl-nav .owl-next {
+  margin-left: 7.5px;
+}
+
+.main-banner .owl-nav .owl-prev span,
+.main-banner .owl-nav .owl-next span  {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 24px;
+  display: inline-block;
+  color: var(--color-purple);
+  background-color: var(--color-white);
+  border-radius: 50%;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.main-banner .owl-nav .owl-prev span:hover,
+.main-banner .owl-nav .owl-next span:hover {
+  opacity: 1;
+}
+
+
+
+
+/* 
+---------------------------------------------
+Categories & Collections Style
+--------------------------------------------- 
+*/
+.categories-collections {
+  background-image: url(../img/dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.collections {
+  padding-block: 4rem;
+  margin-inline: 4rem;
+}
+
+.collections .item img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  object-position: center;
+  
+  background-color: #3d3d3d;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  width: auto;
+  height: 500px;
+}
+
+.collections .item .down-content {
+  margin: 0;
+  background-color: #282b2f;
+  border: 1px solid #404245;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 30px;
+}
+
+.collections .item .down-content h4 {
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.collections .item {
+  height: 100%;
+}
+
+
+.collections .item span {
+  color: var(--color-white);
+  display: inline-block;
+  width: 48%;
+  font-size: 15px;
+}
+
+.collections .item span strong {
+  font-size: 20px;
+}
+
+.collections .item span.category {
+  text-align: right;
+}
+
+.collections .item .main-button a {
+  width: 100%;
+  text-align: center;
+}
+
+.collections .item .main-button {
+  margin-top: 10px;
+  margin-bottom: -40px;
+}
+
+.collections .item .main-button a:hover {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+  color: var(--color-purple);
+}
+
+.collections .owl-nav {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50px);
+  text-align: center;
+}
+
+.collections .owl-nav .owl-prev {
+  position: absolute;
+  left: -23px;
+}
+
+.collections .owl-nav .owl-next {
+  position: absolute;
+  right: -23px;
+}
+
+.collections .owl-nav .owl-prev span,
+.collections .owl-nav .owl-next span  {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 24px;
+  display: inline-block;
+  color: var(--color-purple);
+  background-color: var(--color-white);
+  border-radius: 50%;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.collections .owl-nav .owl-prev span:hover,
+.collections .owl-nav .owl-next span:hover {
+  opacity: 1;
+}

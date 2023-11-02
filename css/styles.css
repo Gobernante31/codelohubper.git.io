@@ -1,0 +1,383 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/*——————————————— ROOT ———————————————*/
+:root {
+  /*——————————————— FUENTE Y TIPOGRAFIA ———————————————*/
+  --body-font: "Poppins", sans-serif;
+  --firts-font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --second-font: "Poppins", cursive;
+
+  --header-height-size: 3.5rem;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  --color-background-33: rgb(33, 33, 33);
+  --color-border-hsla: hsla(0, 0%, 100%, 0.05);
+  --color-purple: #7453fc;
+  --color-white: #ffffffff;
+
+
+  /* COLORES DEL LOGO */
+  --color-yellow: #fda936;
+  --color-blue: #2d95e9;
+  --color-blue-light: #39e9cf;
+  --color-pink: #e826b8;
+}
+
+/* background: linear-gradient(to right, rgb(0, 225, 255), rgb(204, 0, 255), rgb(255, 208, 0));
+-webkit-background-clip: text; 
+color: transparent; */
+
+/*——————————————— BASE ———————————————*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background-33);
+  color: var(--color-white);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+::-moz-selection {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+/*——————————————— CSS REUTILIZABLE ———————————————*/
+.container {
+  justify-content: center;
+  align-items: center;
+  max-width: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  max-width: 1080px;
+  margin-block: 1rem;
+  padding: 1rem;
+}
+
+
+.a_home {
+  color: var(--color-purple);
+  font-family: var(--second-font);
+}
+
+/*——————————————— SCROLL BAR ———————————————*/
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: var(--color-background-33);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: var(--color-border-hsla);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(33, 0%, 25%);
+}
+
+
+/* Mensajes de error */
+.mensaje_ok {
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: #fff;
+  margin: 10px;
+  padding: 0.5rem 0.7rem;
+  border-radius: 1rem;
+  border: 2px solid var(--color-border-hsla);
+  margin-bottom: 1rem;
+  background-color: #0adb9d7c;
+}
+
+.mensaje_error {
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: #fff;
+  padding: 0.5rem 0.7rem;
+  border-radius: 1rem;
+  border: 2px solid var(--color-border-hsla);
+  margin-bottom: 1rem;
+  background-color: rgba(211, 11, 44, 0.5);
+}
+
+
+
+
+
+
+/* Estilo para la línea separadora */
+.section-divider {
+  border-top: 5px solid #ccc; 
+  margin: 10px 0 30px;
+  animation: neon 4s infinite alternate; 
+}
+
+/* Efecto neon */
+@keyframes neon {
+  from {
+    box-shadow: 0 0 10px #00e1ff, 0 0 10px #0400ff, 0 0 10px #8c00ffcb;
+  }
+  to {
+    box-shadow: 0 0 10px #ff00d4, 0 0 10px #ff0077, 0 0 10px #fffb00cb;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* —————————————————— RESPONSIVE 1080PXPX — MOBILE ————————————*/
+@media (max-width: 1080px) {
+  /* SERVICIOS */
+  .main-banner .owl-banner {
+    margin-top: 80px;
+  }
+  .categories .item {
+    margin-bottom: 35px;
+  }
+  .create-nft .section-heading,
+  .currently-market .section-heading {
+    text-align: center;
+  }
+  .currently-market-item {
+    width: 90%;
+  }
+  .create-nft .section-heading .line-dec,
+  .currently-market .section-heading .line-dec {
+    margin: 0 auto;
+  }
+  .create-nft .main-button,
+  .currently-market .filters {
+    text-align: center;
+  }
+
+
+  /* INDEX.HTML */
+  .main-banner .owl-banner {
+    margin-top: 80px;
+  }
+
+  .categories .item {
+    margin-bottom: 35px;
+  }
+
+  .create-nft .section-heading,
+  .currently-market .section-heading {
+    text-align: center;
+  }
+
+  .currently-market-item {
+    width: 90%;
+  }
+
+  .create-nft .section-heading .line-dec,
+  .currently-market .section-heading .line-dec {
+    margin: 0 auto;
+  }
+
+  .create-nft .main-button,
+  .currently-market .filters {
+    text-align: center;
+  }
+
+
+
+  /* SECCIONES */
+  .team {
+    width: 100%;
+    height: auto;
+    padding: 90px 2%;
+  }
+
+  .center h1 {
+    font-size: 3.2rem;
+  }
+
+  .secciones_box {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
+
+/* —————————————————— RESPONSIVE 780PX — MOBILE ————————————*/
+@media (max-width: 780px) {
+  /* PERFIL */
+  .perfil-usuario .contenedor-perfil {
+    width: 100%;
+  }
+  .perfil-usuario .avatar-perfil {
+    left: calc(50% - 115px);
+  }
+  .perfil-usuario .datos-perfil {
+    bottom: 200px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+  .perfil-usuario .presentacion {
+    font-size: 1em;
+    text-overflow: ellipsis;
+    margin-bottom: 0.75rem;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  .perfil-usuario .titulo-usuario {
+    font-size: 2.1rem;
+  }
+  .perfil-usuario .portada-perfil {
+    height: 28rem;
+  }
+  .perfil-usuario .menu-perfil ul {
+    flex-direction: column;
+  }
+  .perfil-usuario .lista-perfil {
+    display: block;
+  }
+  .perfil-usuario .menu-perfil {
+    margin-top: 2rem;
+  }
+  .perfil-usuario .menu-perfil ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-block: 2.5rem;
+    width: 70%;
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  }
+  .perfil-usuario .icono-perfil {
+    margin: 5px;
+    display: inline-block;
+  }
+
+/* DUDAS */
+#formulario {
+  width: 400px;
+  padding: 10px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 14px;
+}
+#enviar {
+  font-size: 16px;
+}
+
+
+
+  /* FOOTER */
+  .footer-col {
+    width: 30%;
+  }
+}
+
+
+/* —————————————————— RESPONSIVE 680PX — MOBILE ————————————*/
+@media (max-width: 680px) {
+  /* REGISTER && LOGIN */
+  .form_container {
+    max-width: 95%;
+  }
+
+  .form_container h2 {
+    font-size: 16px;
+    margin: 0.5rem 0;
+  }
+
+  .input_box input {
+    font-size: 12px;
+    padding: 0 20px;
+  }
+
+  .form_container a {
+    font-size: 12px;
+  }
+
+  .checkbox label {
+    font-size: 14px;
+  }
+
+  .form_container .button {
+    font-size: 12px;
+    padding: 10px auto;
+  }
+
+  .login_signup {
+    font-size: 12px;
+    margin: 0.5rem 0;
+  }
+
+
+  /* SECCIONES INDEX */
+  .secciones_box {
+    width: 100%;
+  }
+
+}
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+
+}

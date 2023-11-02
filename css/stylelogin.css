@@ -1,0 +1,248 @@
+/*-------------------------------- BASE STYLES --------------------------------*/
+
+/* Estilos generales para el cuerpo de la página */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-background-33);
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo del cuerpo con imagen */
+.background_body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  backdrop-filter: blur(24px);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos para botones */
+.button {
+  color: var(--color-white);
+  padding: 6px 24px;
+  border: transparent;
+  background: var(--color-purple);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Estilos de botón al pasar el mouse y hacer clic */
+.button:hover {
+  transform: scale(1.02);
+}
+
+.button:hover:active {
+  background: var(--color-white);
+  color: var(--color-purple);
+  transform: scale(0.96);
+}
+
+/*-------------------------------- CONTAINER STYLES --------------------------------*/
+
+/* Estilos para el contenedor principal */
+.home {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  backdrop-filter: blur(24px);
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--color-purple);
+  padding: 2.5rem;
+  text-align: center;
+}
+
+/*-------------------------------- FORM STYLES --------------------------------*/
+
+/* Estilos para el formulario */
+.form_container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  transform: scale(1.2);
+  padding: 25px;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 1);
+}
+
+/* Título del formulario */
+.form_container h2 {
+  margin: 1rem 0;
+  font-size: 22px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+/* Estilos para los campos de entrada */
+.input_box {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+}
+
+/*-------------------------------- INPUT STYLES --------------------------------*/
+
+/* Estilos generales para los campos de entrada */
+.input_box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 30px;
+  color: var(--color-white);
+  transition: all 0.6s ease;
+  border-bottom: 1.5px solid #aaaaaa;
+  background: transparent;
+}
+
+/* Estilos al enfocar los campos de entrada */
+.input_box input:focus {
+  transform: scale(1.02);
+  border-color: var(--color-purple);
+  color: var(--color-purple);
+  transition: color 1.2s ease;
+}
+
+/* Iconos en los campos de entrada */
+.input_box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #707070;
+}
+
+/* Iconos específicos para campos de entrada */
+.input_box i.email,
+.input_box i.password,
+.input_box i.user {
+  left: 0;
+}
+
+/* Cambio de color de iconos al enfocar los campos de entrada */
+.input_box input:focus ~ i.email,
+.input_box input:focus ~ i.password,
+.input_box input:focus ~ i.user {
+  color: var(--color-purple);
+}
+
+/* Icono para ocultar/mostrar contraseña */
+.input_box i.pw_hide {
+  right: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Cambio de color del icono al pasar el mouse */
+.input_box i.pw_hide:hover {
+  color: var(--color-purple);
+  transition: color 0.3s ease;
+}
+
+/*-------------------------------- OPTION STYLES --------------------------------*/
+
+/* Estilos para el campo de opción */
+.option_field {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Estilos para enlaces dentro del formulario */
+.form_container a {
+  color: var(--color-purple);
+  font-size: var(--smaller-font-size);
+}
+
+/* Cambio de color de enlaces al pasar el mouse */
+.form_container a:hover {
+  color: var(--color-white);
+  transition: color 0.3s ease;
+}
+
+/*-------------------------------- CHECKBOX STYLES --------------------------------*/
+
+/* Estilos para la sección de casillas de verificación */
+.checkbox {
+  display: flex;
+  column-gap: 8px;
+  white-space: nowrap;
+}
+
+/* Estilos para las casillas de verificación */
+.checkbox input {
+  accent-color: var(--color-purple);
+}
+
+/* Estilos para las etiquetas de las casillas de verificación */
+.checkbox label {
+  font-size: var(--smaller-font-size);
+  cursor: pointer;
+  user-select: none;
+  color: var(--color-white);
+}
+
+/*-------------------------------- BUTTON STYLES --------------------------------*/
+
+/* Estilos para el botón de registro */
+.form_container .button {
+  background: var(--color-purple);
+  margin-top: 2.5rem;
+  width: 100%;
+  padding: 10px 1rem;
+  border-radius: 1rem;
+}
+
+/*-------------------------------- LOGIN/SIGNUP STYLES --------------------------------*/
+
+/* Estilos para la sección de inicio de sesión o registro */
+.login_signup {
+  font-size: var(--smaller-font-size);
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 1rem 0rem 1rem;
+}
+
+/* Estilos para el ícono de inicio */
+.login_signup i {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+  border-radius: 1rem;
+  padding: 10px;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  margin-left: 45%;
+  margin-top: 15px;
+  margin-bottom: 1rem;
+}
+
+/* Cambio de color del ícono al pasar el mouse */
+.login_signup i:hover {
+  color: var(--color-purple);
+  transition: background-color 0.3s ease;
+  background-color: var(--color-white);
+}
+
+

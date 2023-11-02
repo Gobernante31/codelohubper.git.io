@@ -1,0 +1,193 @@
+/*——————————————— MAIN ———————————————*/
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title_section {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+/* Estilos para el contenedor principal */
+.home {
+  width: 100%;
+  max-width: 897.9px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+
+/* Estilos para la lista de clasificación */
+.rank-list {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  /* Evitar que se envuelvan a la siguiente fila */
+  justify-content: center;
+  /* Centrar los elementos horizontalmente */
+  gap: 20px;
+  /* Espacio entre los elementos */
+  padding: 20px;
+  /* Espaciado interior */
+}
+
+.rank-item {
+  background-color: aquamarine;
+  flex: 0 0 calc(33.33% - 20px);
+  /* Ancho de cada elemento (tres elementos por fila) */
+  margin-right: 20px;
+  /* Espacio entre los elementos */
+  padding: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+/* Estilos para los tres primeros elementos */
+.rank-item:nth-child(1) {
+  color: #222;
+  background-color: #1dc2e7;
+  /* Fondo para el primer elemento (color rojo) */
+  box-shadow: 0 0 14px rgba(4, 248, 248, 0.5);
+  /* Sombra dorada */
+}
+
+/* Estilos específicos para el segundo elemento */
+.rank-item:nth-child(2) {
+  color: #222;
+  background-color: #EABE3F;
+  /* Fondo de los tres primeros elementos (color dorado) */
+  box-shadow: 0 0 14px rgba(255, 215, 0, 0.5);
+  /* Sombra dorada */
+}
+
+/* Estilos específicos para el tercer elemento */
+.rank-item:nth-child(3) {
+  color: #222;
+  background-color: #d3d3d3;
+  /* Fondo para el tercer elemento (color azul) */
+  box-shadow: 0 0 14px rgba(150, 150, 150, 0.884);
+  /* Sombra dorada */
+}
+
+
+.rank-item:hover {
+  transform: scale(1.03);
+}
+
+/* Icono de la coronita para los tres primeros elementos */
+.rank-item:nth-child(-n+3)::before {
+  content: "👑";
+  /* Icono de la coronita */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.rank-item h3 {
+  font-size: 20px;
+  /* Tamaño del nombre de usuario */
+  margin: 0;
+}
+
+.rank-item p {
+  font-size: 18px;
+  /* Tamaño del puntaje */
+  margin: 0;
+}
+
+/* Estilos específicos para el ranking */
+.home .rank-list {
+  max-width: 100%;
+  margin-bottom: 40px;
+
+}
+
+
+
+
+
+
+
+/* Estilo dedicado a la tabla */
+table {
+  padding: 2px;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 20px auto;
+  color: white;
+  border: 2px solid var(--color-border-hsla);
+}
+
+th,
+td {
+  border: 2px solid transparent;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  pointer-events: none;
+  background-color: #444;
+  border: 2px solid var(--color-border-hsla);
+}
+
+
+/* Aplica los estilos hover a toda la fila */
+tr {
+  background-color: #33333350;
+  transition: all 0.5s;
+}
+
+tr:hover {
+  transform: scale(1.02);
+  backdrop-filter: blur(30px);
+  background: #33333380;
+}
+
+
+
+td button {
+  background-color: transparent;
+  border: 2px solid var(--color-border-hsla);
+  color: var(--color-purple);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.user-icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 5px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.points-highlight {
+  font-weight: bold;
+  color: var(--color-purple);
+  font-size: 1.2em;
+}
+
+/* ICONOS */
+.fst-puesto {
+  width: 32px;
+  height: 32px;
+}

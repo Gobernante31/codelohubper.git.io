@@ -1,0 +1,385 @@
+form {
+  border-radius: 1rem;
+  padding: 3rem;
+  background: #33333350;
+  text-align: left;
+  margin-block: 5rem;
+  border: 2px solid var(--color-border-hsla);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.625rem 1.5rem;
+  border: 1px solid var(--color-border-hsla);
+  border-radius: 2rem;
+  color: var(--color-white);
+  background: rgba(204, 11, 178, 1);
+}
+
+button:hover {
+  transition: background 0.3s ease;
+  color: white;
+  background: rgba(133, 0, 126, 1);
+}
+
+.perfil-usuario {
+  border-color: 2px var(--color-border-hsla);
+  margin-top: 5rem;
+  color: #ffffff;
+}
+
+.perfil-usuario .cambiar-foto {
+  border-radius: 10%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  bottom: -5px;
+  left: 0;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(80%);
+  opacity: 0;
+  transition: all ease-in 200ms;
+}
+
+.perfil-usuario .cambiar-foto i {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.perfil-usuario .avatar-perfil:hover .cambiar-foto {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.perfil-usuario .portada-perfil,
+.perfil-usuario .sombra {
+  border-radius: 0 0 20px 20px;
+}
+
+.perfil-usuario img {
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.contenedor-perfil {
+  max-width: 1024px;
+  margin-bottom: 5rem;
+}
+
+.perfil-usuario .contenedor-perfil {
+  width: 100%;
+}
+
+.perfil-usuario .portada-perfil {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 11rem;
+  margin-bottom: 0.5rem;
+}
+
+.perfil-usuario .avatar-perfil {
+  display: block;
+  width: 230px;
+  height: 230px;
+  background-color: #ccc;
+  position: absolute;
+  bottom: -65px;
+  left: calc(50% - 115px);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* From */
+.form_container {
+  width: auto;
+  transform: scale(1.2);
+  padding: 25px;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 1);
+}
+
+.form_container h2 {
+  margin: 1rem;
+  font-size: 22px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.input_box {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+}
+
+.input_box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 30px;
+  color: var(--color-white);
+  transition: all 0.6s ease;
+  border-bottom: 1.5px solid #aaaaaa;
+  background: transparent;
+}
+
+.input_box input:focus {
+  transform: scale(1.02);
+  border-color: var(--color-team);
+  /* color: var(--color-team-darker); */
+  color: var(--color-team);
+  transition: color 1.2s ease;
+}
+
+.input_box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #707070;
+}
+
+.input_box i.email,
+.input_box i.password {
+  left: 0;
+}
+
+.input_box input:focus~i.email,
+.input_box input:focus~i.password {
+  color: var(--color-team);
+}
+
+.input_box i.pw_hide {
+  right: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.input_box i.pw_hide:hover {
+  color: var(--color-team);
+  transition: color 0.3s ease;
+}
+
+.form_container a:hover {
+  color: var(--color-team-darker);
+  transition: color 0.3s ease;
+}
+
+.form_container .button {
+  background: var(--color-team);
+  margin-top: 2.5rem;
+  width: 100%;
+  padding: 10px 6rem;
+  border-radius: 1rem;
+}
+
+.login_signup {
+  font-size: var(--smaller-font-size);
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 1rem 0rem 1rem;
+}
+
+.login_signup i {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+  border-radius: 1rem;
+  padding: 10px;
+  background-color: var(--color-team);
+  color: var(--color-white);
+  margin-left: 45%;
+  margin-top: 15px;
+  margin-bottom: 1rem;
+}
+
+.login_signup i:hover {
+  transition: background-color 0.3s ease;
+  background-color: var(--color-team-darker);
+}
+
+.title_foto {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.biografia {
+  margin-top: 1.5rem;
+}
+
+.biografia input:focus {
+  transform: scale(1.02);
+  border-color: var(--color-team);
+  color: var(--color-team);
+  transition: color 1.2s ease;
+}
+
+.textarea {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 34px;
+  color: var(--color-white);
+  transition: all 0.6s ease;
+  border-bottom: 1.5px solid #aaaaaa;
+  background: transparent;
+}
+
+.biografia textarea:focus {
+  transform: scale(1.02);
+  border-color: var(--color-team);
+  color: var(--color-team);
+  transition: color 1.2s ease;
+}
+
+
+.biografia i {
+  position: absolute;
+  top: 73%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #707070;
+}
+
+.biografia i.informacion {
+  left: 75px;
+}
+
+.biografia textarea:focus~i.informacion {
+  color: var(--color-team);
+}
+
+
+.button-gc {
+  margin-top: 3rem;
+}
+
+.input_box input:focus {
+  transform: scale(1.02);
+  border-color: var(--color-team);
+  color: var(--color-team);
+  transition: color 1.2s ease;
+}
+
+.input_box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #707070;
+}
+
+.input_box i.email,
+.input_box i.password {
+  left: 0;
+}
+
+.input_box input:focus~i.email,
+.input_box input:focus~i.password {
+  color: var(--color-team);
+}
+
+.input_box i.pw_hide {
+  right: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.input_box i.pw_hide:hover {
+  color: var(--color-team);
+  transition: color 0.3s ease;
+}
+
+.option_field {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form_container a {
+  color: var(--color-team);
+  font-size: var(--smaller-font-size);
+}
+
+.form_container a:hover {
+  color: var(--color-team-darker);
+  transition: color 0.3s ease;
+}
+
+.checkbox label {
+  font-size: var(--smaller-font-size);
+  cursor: pointer;
+  user-select: none;
+  color: var(--color-white);
+}
+
+.form_container .button {
+  background: var(--color-team);
+  margin-top: 2.5rem;
+  width: 100%;
+  padding: 10px 6rem;
+  border-radius: 1rem;
+}
+
+.login_signup {
+  font-size: var(--smaller-font-size);
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 1rem 0rem 1rem;
+}
+
+.login_signup i {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+  border-radius: 1rem;
+  padding: 10px;
+  background-color: var(--color-team);
+  color: var(--color-white);
+  margin-left: 45%;
+  margin-top: 15px;
+  margin-bottom: 1rem;
+}
+
+.login_signup i:hover {
+  transition: background-color 0.3s ease;
+  background-color: var(--color-team-darker);
+}
